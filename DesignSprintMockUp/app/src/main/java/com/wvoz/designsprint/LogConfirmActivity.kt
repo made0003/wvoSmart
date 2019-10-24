@@ -15,7 +15,8 @@ class LogConfirmActivity : WearableActivity() {
         mBinding = DataBindingUtil.setContentView(this, R.layout.layout_list)
         mBinding?.confirmButton?.setOnClickListener { confirm() }
         mBinding?.listTitle = getString(R.string.log_confirm)
-        mBinding?.listContent = getString(R.string.log_content)
+        mBinding?.listContent = savedInstanceState?.getString("text") ?: getString(R.string.log_content)
+
 
 
         // Enables Always-on
