@@ -22,7 +22,7 @@ class LogConfirmActivity : WearableActivity() {
         } else {
             mBinding?.listContent = getString(R.string.log_content)
         }
-
+        mBinding?.listContent = savedInstanceState?.getString("text") ?: getString(R.string.log_content)
 
 
         // Enables Always-on
