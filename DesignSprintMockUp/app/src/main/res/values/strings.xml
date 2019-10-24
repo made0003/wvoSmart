@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Design Sprint Mock Up</string>
+    <string name="mock_up_time">7:29</string>
+    <string name="nacht_dossier">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id lorem pharetra, viverra lacus tristique, suscipit ligula. Integer nec ex aliquet, iaculis urna ac, tempor risus. Aliquam sit amet leo ut ante venenatis blandit a at enim. Nunc est arcu, consectetur sit amet posuere pharetra, convallis a sapien. Aliquam ac neque in lacus rutrum malesuada quis sed tortor. Suspendisse interdum sagittis diam at accumsan. Duis accumsan congue accumsan. Curabitur urna turpis, ullamcorper sit amet posuere eu, imperdiet a augue.  Quisque non sem non sem porta convallis. Donec porttitor nibh non dui porta condimentum. In a ipsum aliquam, semper arcu a, sollicitudin dolor. Mauris at felis tortor. Vestibulum vel orci quis metus elementum suscipit. Duis efficitur sapien at dictum mattis. Maecenas iaculis lacus nec urna interdum sodales. Duis venenatis congue dictum. In vitae nibh neque.</string>
+    <string name="medicijn_1">medicijn 1</string>
+    <string name="medicijn_beschrijving_1">medicijn_beschrijving_1</string>
+    <string name="medicijn_2">medicijn 2</string>
+    <string name="medicijn_beschrijving_2">medicijn_beschrijving_2</string>
+    <string name="medicijn_3">medicijn 3</string>
+    <string name="medicijn_beschrijving_3">medicijn_beschrijving_3</string>
+    <string name="photo_reminder">Alle foto\'s genomen?</string>
+    <string name="nacht_dossier_titel">Nacht dossier Marriane</string>
+    <string name="agenda_titel">Nacht dossier Marriane</string>
+    <string name="agenda_items">10:30\nBezoek doctor Jan\n\n15:00\nKapper\n\n 18:00\nStart bridge club</string>
+
+</resources>
