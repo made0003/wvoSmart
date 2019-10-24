@@ -12,10 +12,17 @@ class DossierActivity : WearableActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_dossier)
+        mBinding?.recording = false
+
 
         mBinding?.dossier?.setOnClickListener {
-            //            val i = Intent((), AgendaActivity::class.java)
-    //            startActivity(i)
+            if (mBinding?.recording == true) {
+                val i = Intent(this, LogConfirmActivity::class.java)
+                startActivity(i)
+                finish()
+            } else {
+                mBinding?.recording = true
+            }
         }
 
 

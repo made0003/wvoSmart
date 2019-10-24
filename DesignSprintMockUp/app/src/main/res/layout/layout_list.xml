@@ -67,6 +67,23 @@
                         android:src="@drawable/ic_check_24px" />
 
                 </FrameLayout>
+
+                <FrameLayout
+                    android:visibility="gone"
+                    android:alpha="0"
+                    android:id="@+id/checkbox"
+                    android:background="@color/green"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_check_24px"
+                        android:contentDescription="checkbox"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                </FrameLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
