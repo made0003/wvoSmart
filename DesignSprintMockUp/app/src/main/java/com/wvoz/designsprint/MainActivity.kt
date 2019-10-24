@@ -1,7 +1,9 @@
 package com.wvoz.designsprint
 
+import android.content.Context
 import android.os.Bundle
 import android.content.Intent
+import android.os.Vibrator
 import android.support.wearable.activity.WearableActivity
 import android.view.View
 import androidx.databinding.DataBindingUtil
@@ -25,12 +27,13 @@ class MainActivity : WearableActivity() {
     }
 
     private fun setTime(){
-        mBinding?.timeText?.text = SimpleDateFormat("hh:mm", Locale.getDefault()).format(Date())
+        mBinding?.timeText?.text = SimpleDateFormat("HH:mm", Locale.GERMANY).format(Date())
     }
 
 
 
     private fun confirm() {
+        Utils().viberate(this)
         mBinding?.checkbox?.visibility = View.VISIBLE
         mBinding?.checkbox?.animate()
             ?.setDuration(500)

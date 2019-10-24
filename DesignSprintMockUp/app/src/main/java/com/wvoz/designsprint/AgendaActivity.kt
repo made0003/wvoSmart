@@ -24,8 +24,8 @@ class AgendaActivity : WearableActivity() {
 
         private fun confirm() {
 
-//            val i = Intent(this, MedicatiePager::class.java)
-//            startActivity(i)
+            val i = Intent(this, DossierActivity::class.java)
+            startActivity(i)
         }
 
     }

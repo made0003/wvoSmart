@@ -27,7 +27,7 @@
                 android:layout_gravity="center"
                 android:text="@string/mock_up_time"
                 android:textColor="@color/white"
-                android:textSize="28sp" />
+                android:textSize="48sp" />
 
         </FrameLayout>
 
