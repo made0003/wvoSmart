@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">wvoSmart</string>
-    <string name="mock_up_time">7:28</string>
+    <string name="mock_up_time">7:28\n\n25 oktober 2019</string>
     <string name="nacht_dossier_titel">Logboek</string>
-    <string name="nacht_dossier">25-10-2019 - 03.15\nDe mevrouw de Jong is vannacht uit bed gevallen en heeft daarom verband op haar been.\n\n24-10-2019 - 21.39\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id lorem pharetra, viverra lacus tristique, suscipit ligula.\n\n24-10-2019 - 07.31\nInteger nec ex aliquet, iaculis urna ac, tempor risus. Aliquam sit amet leo ut ante venenatis blandit a at enim.\n\n23-10-2019 - 21.22\nNunc est arcu, consectetur sit amet posuere pharetra, convallis a sapien. Aliquam ac neque in lacus rutrum malesuada quis sed tortor.\n\n23-10-2019 - 07.28\nSuspendisse interdum sagittis diam at accumsan. Duis accumsan congue accumsan. Curabitur urna turpis, ullamcorper sit amet posuere eu, imperdiet a augue.\n\n</string>
-    <string name="medicijn_1">Panduno</string>
-    <string name="medicijn_beschrijving_1">100mg</string>
-    <string name="medicijn_2">Cortazol</string>
-    <string name="medicijn_beschrijving_2">100mg</string>
-    <string name="medicijn_3">Ecabodol</string>
-    <string name="medicijn_beschrijving_3">40mg</string>
+    <string name="nacht_dossier">25-10-2019 | 03.15\nDe mevrouw de Jong is vannacht uit bed gevallen en heeft daarom verband op haar been.\n\n24-10-2019 | 21.39\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id lorem pharetra, viverra lacus tristique, suscipit ligula.\n\n24-10-2019 | 07.31\nInteger nec ex aliquet, iaculis urna ac, tempor risus. Aliquam sit amet leo ut ante venenatis blandit a at enim.\n\n23-10-2019 | 21.22\nNunc est arcu, consectetur sit amet posuere pharetra, convallis a sapien. Aliquam ac neque in lacus rutrum malesuada quis sed tortor.\n\n23-10-2019 | 07.28\nSuspendisse interdum sagittis diam at accumsan. Duis accumsan congue accumsan. Curabitur urna turpis, ullamcorper sit amet posuere eu, imperdiet a augue.\n\n</string>
+    <string name="medicijn_1">Panduno | 100mg</string>
+    <string name="medicijn_beschrijving_1">Dosering in één keer innemen met water</string>
+    <string name="medicijn_2">Cortazol | 100mg</string>
+    <string name="medicijn_beschrijving_2">Dosering in één keer innemen met water</string>
+    <string name="medicijn_3">Ecabodol | 400mg</string>
+    <string name="medicijn_beschrijving_3">Dosering in één keer innemen met water</string>
     <string name="photo_reminder">Alle foto\'s genomen?</string>
     <string name="agenda_titel">Agenda</string>
     <string name="agenda_items">Ontbijt\n07:30 - 08:30\nBrasserie\n\nFamilie komt langs\n14:00 - 16:00\nOntmoetingsruimte\n\nBridgen\n19:30 - 20:30\nGertrude\'s kamer</string>
