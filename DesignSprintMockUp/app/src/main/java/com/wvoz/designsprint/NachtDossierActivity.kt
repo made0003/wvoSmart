@@ -25,7 +25,7 @@ class NachtDossierActivity : WearableActivity() {
 
     private fun confirm() {
 
-        val i = Intent(this, MedicatiePager::class.java)
+        val i = Intent(this, ChecklistPager::class.java)
         startActivity(i)
     }
 

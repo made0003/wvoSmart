@@ -8,6 +8,12 @@
     <string name="medicijn_beschrijving_2">medicijn_beschrijving_2</string>
     <string name="medicijn_3">medicijn 3</string>
     <string name="medicijn_beschrijving_3">medicijn_beschrijving_3</string>
+    <string name="checklist_1">Checklist 1/3</string>
+    <string name="checklist_beschrijving_1">Uit bed</string>
+    <string name="checklist_2">Checklist 2/3</string>
+    <string name="checklist_beschrijving_2">Helpen kleden</string>
+    <string name="checklist_3">Checklist 3/3</string>
+    <string name="checklist_beschrijving_3">derde ding</string>
     <string name="photo_reminder">Alle foto\'s genomen?</string>
     <string name="nacht_dossier_titel">Nacht dossier Marriane</string>
     <string name="agenda_titel">Nacht dossier Marriane</string>

@@ -16,7 +16,7 @@
         tools:deviceIds="wear">
 
         <androidx.viewpager.widget.ViewPager
-            android:id="@+id/medicatiePager"
+            android:id="@+id/pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
