@@ -24,7 +24,11 @@ class ChecklistFragment : Fragment() {
         }
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         val binding = ChecklistFragmentBinding.inflate(inflater, container, false)
         binding.checklistTitle = title
         binding.checklistMessage = message
@@ -33,6 +37,7 @@ class ChecklistFragment : Fragment() {
         binding.finalScreen.setOnClickListener {
             val i = Intent(requireActivity(), MedicatiePager::class.java)
             startActivity(i)
+            requireActivity().finish()
         }
 
         return binding.root
@@ -40,7 +45,10 @@ class ChecklistFragment : Fragment() {
 
     companion object {
 
-        fun newInstance(@StringRes titleId: Int = R.string.checklist_1, @StringRes messageId: Int=  R.string.checklist_beschrijving_1, finalScreen : Boolean = false): ChecklistFragment {
+        fun newInstance(
+            @StringRes titleId: Int = R.string.checklist_1, @StringRes messageId: Int = R.string.checklist_beschrijving_1,
+            finalScreen: Boolean = false
+        ): ChecklistFragment {
             val args = Bundle()
             val fragment = ChecklistFragment()
             args.putInt("title", titleId)

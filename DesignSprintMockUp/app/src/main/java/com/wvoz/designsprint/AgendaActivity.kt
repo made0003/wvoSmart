@@ -26,6 +26,7 @@ class AgendaActivity : WearableActivity() {
 
             val i = Intent(this, DossierActivity::class.java)
             startActivity(i)
+            finish()
         }
 
     }

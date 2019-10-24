@@ -24,7 +24,11 @@ class MedicatieFragment : Fragment() {
         }
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         val binding = MedicatieFragmentBinding.inflate(inflater, container, false)
         binding.medicatieTitle = title
         binding.medicatieMessage = message
@@ -33,6 +37,7 @@ class MedicatieFragment : Fragment() {
         binding.finalScreen.setOnClickListener {
             val i = Intent(requireActivity(), AgendaActivity::class.java)
             startActivity(i)
+            requireActivity().finish()
         }
 
         return binding.root
@@ -40,7 +45,10 @@ class MedicatieFragment : Fragment() {
 
     companion object {
 
-        fun newInstance(@StringRes titleId: Int = R.string.medicijn_1, @StringRes messageId: Int=  R.string.medicijn_beschrijving_1, finalScreen : Boolean = false): MedicatieFragment {
+        fun newInstance(
+            @StringRes titleId: Int = R.string.medicijn_1, @StringRes messageId: Int = R.string.medicijn_beschrijving_1,
+            finalScreen: Boolean = false
+        ): MedicatieFragment {
             val args = Bundle()
             val fragment = MedicatieFragment()
             args.putInt("title", titleId)

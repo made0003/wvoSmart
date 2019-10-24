@@ -5,6 +5,11 @@
 
     <data>
 
+        <variable
+            name="recording"
+            type="Boolean" />
+
+        <import type="android.view.View"/>
     </data>
 
     <androidx.wear.widget.BoxInsetLayout
@@ -22,10 +27,22 @@
             android:layout_height="match_parent">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/picture_icon"
+                android:id="@+id/mic_icon"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:visibility="@{recording ? View.GONE : View.VISIBLE}"
                 android:src="@drawable/ic_mic_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/stop_recording"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@color/white"
+                android:visibility="@{recording ? View.VISIBLE : View.GONE}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -34,10 +51,11 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dossier bijwerken"
-                app:layout_constraintEnd_toEndOf="@id/picture_icon"
-                app:layout_constraintStart_toStartOf="@id/picture_icon"
-                app:layout_constraintTop_toBottomOf="@id/picture_icon" />
+                android:visibility="@{recording ? View.GONE : View.VISIBLE}"
+                android:text="@string/edit_dossier"
+                app:layout_constraintEnd_toEndOf="@id/mic_icon"
+                app:layout_constraintStart_toStartOf="@id/mic_icon"
+                app:layout_constraintTop_toBottomOf="@id/mic_icon" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -30,19 +30,18 @@ class MainActivity : WearableActivity() {
         mBinding?.timeText?.text = SimpleDateFormat("HH:mm", Locale.GERMANY).format(Date())
     }
 
-
-
     private fun confirm() {
         Utils().viberate(this)
         mBinding?.checkbox?.visibility = View.VISIBLE
-        mBinding?.checkbox?.animate()
-            ?.setDuration(500)
-            ?.alpha(1f)
-            ?.withEndAction {
-                val i = Intent(this, NachtDossierActivity::class.java)
-                startActivity(i)
-            }
-            ?.start()
+                mBinding?.checkbox?.animate()
+                    ?.setDuration(500)
+                    ?.alpha(1f)
+                    ?.withEndAction {
+                        val i = Intent(this, NachtDossierActivity::class.java)
+                                            startActivity(i)
+                    finish()
+                    }
+                    ?.start()
     }
 
 }
