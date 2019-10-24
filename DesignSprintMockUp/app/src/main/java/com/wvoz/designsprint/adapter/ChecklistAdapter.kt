@@ -1,9 +1,10 @@
-package com.wvoz.designsprint
+package com.wvoz.designsprint.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.wvoz.designsprint.databinding.ChecklistFragmentBinding
+import com.wvoz.designsprint.R
+import com.wvoz.designsprint.fragment.ChecklistFragment
 
 class ChecklistAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
