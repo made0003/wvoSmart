@@ -12,4 +12,10 @@
     <string name="photo_reminder">Alle foto\'s genomen?</string>
     <string name="agenda_titel">Agenda</string>
     <string name="agenda_items">Ontbijt\n07:30 - 08:30\nBrasserie\n\nFamilie komt langs\n14:00 - 16:00\nOntmoetingsruimte\n\nBridgen\n19:30 - 20:30\nGertrude\'s kamer</string>
+    <string name="checklist_1">Checklist 1/3</string>
+    <string name="checklist_beschrijving_1">Uit bed</string>
+    <string name="checklist_2">Checklist 2/3</string>
+    <string name="checklist_beschrijving_2">Helpen kleden</string>
+    <string name="checklist_3">Checklist 3/3</string>
+    <string name="checklist_beschrijving_3">derde ding</string>
 </resources>
