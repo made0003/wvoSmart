@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</LinearLayout>
+    <data>
+
+    </data>
+
+    <androidx.wear.widget.BoxInsetLayout
+        android:id="@+id/dossier"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_grey"
+        android:padding="@dimen/box_inset_layout_padding"
+        tools:context=".DossierActivity"
+        tools:deviceIds="wear">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/finalScreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/picture_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_mic_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dossier bijwerken"
+                app:layout_constraintEnd_toEndOf="@id/picture_icon"
+                app:layout_constraintStart_toStartOf="@id/picture_icon"
+                app:layout_constraintTop_toBottomOf="@id/picture_icon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.wear.widget.BoxInsetLayout>
+
+</layout>

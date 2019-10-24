@@ -3,6 +3,7 @@
     package="com.wvoz.designsprint">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <uses-feature android:name="android.hardware.type.watch" />
 
@@ -36,6 +37,9 @@
         <activity android:name=".NachtDossierActivity" />
         <activity android:name=".MedicatiePager" />
         <activity android:name=".AgendaActivity" />
+        <activity android:name=".DossierActivity" />
+
+        <activity android:name=".ChecklistPager" />
     </application>
 
 </manifest>
