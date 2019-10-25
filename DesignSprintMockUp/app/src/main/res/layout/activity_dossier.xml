@@ -18,7 +18,7 @@
         android:layout_height="match_parent"
         android:background="@color/dark_grey"
         android:padding="@dimen/box_inset_layout_padding"
-        tools:context=".DossierActivity"
+        tools:context=".activity.DossierActivity"
         tools:deviceIds="wear">
 
         <androidx.constraintlayout.widget.ConstraintLayout

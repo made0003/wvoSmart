@@ -1,10 +1,12 @@
-package com.wvoz.designsprint
+package com.wvoz.designsprint.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.wearable.activity.WearableActivity
 import android.view.View
 import androidx.databinding.DataBindingUtil
+import com.wvoz.designsprint.R
+import com.wvoz.designsprint.Utils
 import com.wvoz.designsprint.databinding.LayoutListBinding
 
 class LogConfirmActivity : WearableActivity() {
@@ -15,8 +17,7 @@ class LogConfirmActivity : WearableActivity() {
         mBinding = DataBindingUtil.setContentView(this, R.layout.layout_list)
         mBinding?.confirmButton?.setOnClickListener { confirm() }
         mBinding?.listTitle = getString(R.string.log_confirm)
-        mBinding?.listContent = savedInstanceState?.getString("text") ?: getString(R.string.log_content)
-
+        mBinding?.listContent = intent.getStringExtra("text") ?: getString(R.string.log_content)
 
 
         // Enables Always-on
@@ -24,7 +25,7 @@ class LogConfirmActivity : WearableActivity() {
     }
 
     private fun confirm() {
-
+        Utils().viberate(this)
         mBinding?.checkbox?.visibility = View.VISIBLE
         mBinding?.checkbox?.animate()
             ?.setDuration(500)

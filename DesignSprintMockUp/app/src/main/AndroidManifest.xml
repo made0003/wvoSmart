@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wvoz.designsprint">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
@@ -26,7 +27,7 @@
             android:value="true" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,13 +35,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NachtDossierActivity" />
-        <activity android:name=".MedicatiePager" />
-        <activity android:name=".AgendaActivity" />
-        <activity android:name=".DossierActivity" />
+        <activity android:name=".activity.NachtDossierActivity" />
+        <activity android:name=".pager.MedicatiePager" />
+        <activity android:name=".activity.AgendaActivity" />
+        <activity android:name=".activity.DossierActivity" />
 
-        <activity android:name=".ChecklistPager" />
-        <activity android:name=".LogConfirmActivity" />
+        <activity android:name=".pager.ChecklistPager" />
+        <activity android:name=".activity.LogConfirmActivity" />
     </application>
 
 </manifest>

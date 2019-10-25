@@ -1,10 +1,12 @@
-package com.wvoz.designsprint
+package com.wvoz.designsprint.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.wearable.activity.WearableActivity
 import androidx.databinding.DataBindingUtil
+import com.wvoz.designsprint.R
 import com.wvoz.designsprint.databinding.LayoutListBinding
+import com.wvoz.designsprint.pager.ChecklistPager
 
 class NachtDossierActivity : WearableActivity() {
 
