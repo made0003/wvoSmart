@@ -1,10 +1,12 @@
-package com.wvoz.designsprint
+package com.wvoz.designsprint.activity
 
-import android.os.Bundle
 import android.content.Intent
+import android.os.Bundle
 import android.support.wearable.activity.WearableActivity
 import android.view.View
 import androidx.databinding.DataBindingUtil
+import com.wvoz.designsprint.R
+import com.wvoz.designsprint.Utils
 import com.wvoz.designsprint.databinding.ActivityMainBinding
 import java.text.SimpleDateFormat
 import java.util.*
@@ -15,7 +17,9 @@ class MainActivity : WearableActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        mBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        mBinding = DataBindingUtil.setContentView(this,
+            R.layout.activity_main
+        )
         setTime()
 
         mBinding?.mainContent?.setOnClickListener { confirm() }
@@ -25,21 +29,21 @@ class MainActivity : WearableActivity() {
     }
 
     private fun setTime(){
-        mBinding?.timeText?.text = SimpleDateFormat("hh:mm", Locale.getDefault()).format(Date())
+        mBinding?.timeText?.text = SimpleDateFormat("HH:mm", Locale.GERMANY).format(Date())
     }
 
-
-
     private fun confirm() {
+        Utils().viberate(this)
         mBinding?.checkbox?.visibility = View.VISIBLE
-        mBinding?.checkbox?.animate()
-            ?.setDuration(500)
-            ?.alpha(1f)
-            ?.withEndAction {
-                val i = Intent(this, NachtDossierActivity::class.java)
-                startActivity(i)
-            }
-            ?.start()
+                mBinding?.checkbox?.animate()
+                    ?.setDuration(500)
+                    ?.alpha(1f)
+                    ?.withEndAction {
+                        val i = Intent(this, NachtDossierActivity::class.java)
+                                            startActivity(i)
+                    finish()
+                    }
+                    ?.start()
     }
 
 }

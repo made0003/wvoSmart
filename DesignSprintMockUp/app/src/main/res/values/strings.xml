@@ -18,4 +18,7 @@
     <string name="checklist_beschrijving_2">Douchen</string>
     <string name="checklist_3">Checklist 3/3</string>
     <string name="checklist_beschrijving_3">Helpen aankleden</string>
+    <string name="edit_dossier">Dossier bijwerken</string>
+    <string name="log_confirm">Bevestig log update</string>
+    <string name="log_content">Doe maar even alsof dit is wat je net ingesproken had. Het gaat vandaag goed met mevrouw de Jong. Ze heeft wel nog een beetje last van haar heup sinds de val van vorige week, hier moet op gelet worden. \n\nVerder lijkt het er op dat mevrouw de Jong haar griep mogelijk toch niet over is gezien ze aan geeft veel buikpijn te hebben.\nZe geeft wel aan desondanks beter te voelen.</string>
 </resources>
